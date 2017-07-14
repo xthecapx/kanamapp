@@ -14,13 +14,14 @@
 </template>
 
 <script>
-  import b1u1 from '../components/bookOne/unitOne/Main'
-  import b1u2 from '../components/bookOne/unitTwo/Main'
-  import b1u3 from '../components/bookOne/unitThree/Main'
-  import b1u4 from '../components/bookOne/unitFour/Main'
-  import b1u5 from '../components/bookOne/unitFive/Main'
-  import b1u6 from '../components/bookOne/unitSix/Main'
-  import b1u7 from '../components/bookOne/unitSeven/Main'
+  import b1u1 from '../components/books/one/unitOne/Main'
+  import b1u2 from '../components/books/one/unitTwo/Main'
+  import b1u3 from '../components/books/one/unitThree/Main'
+  import b1u4 from '../components/books/one/unitFour/Main'
+  import b1u5 from '../components/books/one/unitFive/Main'
+  import b1u6 from '../components/books/one/unitSix/Main'
+  import b1u7 from '../components/books/one/unitSeven/Main'
+  import b1u8 from '../components/books/two/unitEight/Main'
 
   import { mapGetters } from 'vuex'
 
@@ -43,7 +44,8 @@
       b1u4,
       b1u5,
       b1u6,
-      b1u7
+      b1u7,
+      b1u8
     },
     created() {
         this.mode = this.getType

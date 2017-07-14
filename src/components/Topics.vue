@@ -74,6 +74,9 @@
             case "Unit 7":
                 this.$store.commit("setType", 'b1u7')
                 break;
+            case "Unit 8":
+                this.$store.commit("setType", 'b1u8')
+                break;
             default:
                 this.$store.commit("setType", 'b1u1')
         }

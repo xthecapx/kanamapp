@@ -1,10 +1,11 @@
-import { unitOne, unitOneDictionary } from './bookOne/unitOne'
-import { unitTwo, unitTwoDictionary } from './bookOne/unitTwo'
-import { unitThree, unitThreeDictionary } from './bookOne/unitThree'
-import { unitFour, unitFourDictionary } from './bookOne/unitFour'
-import { unitFive, unitFiveDictionary } from './bookOne/unitFive'
-import { unitSix, unitSixDictionary } from './bookOne/unitSix'
-import { unitSeven, unitSevenDictionary } from './bookOne/unitSeven'
+import { unitOne, unitOneDictionary } from './books/one/unitOne'
+import { unitTwo, unitTwoDictionary } from './books/one/unitTwo'
+import { unitThree, unitThreeDictionary } from './books/one/unitThree'
+import { unitFour, unitFourDictionary } from './books/one/unitFour'
+import { unitFive, unitFiveDictionary } from './books/one/unitFive'
+import { unitSix, unitSixDictionary } from './books/one/unitSix'
+import { unitSeven, unitSevenDictionary } from './books/one/unitSeven'
+import { unitEight, unitEightDictionary } from './books/two/unitEight'
 
 export const VOCABULARY = {
   unitOne,
@@ -13,7 +14,16 @@ export const VOCABULARY = {
   unitFour,
   unitFive,
   unitSix,
-  unitSeven
+  unitSeven,
+  unitEight
 }
 
-export const DICTIONARY = unitOneDictionary.concat(unitTwoDictionary, unitThreeDictionary, unitFourDictionary, unitFiveDictionary, unitSixDictionary, unitSevenDictionary);
+export const DICTIONARY = unitOneDictionary.concat(
+  unitTwoDictionary,
+  unitThreeDictionary,
+  unitFourDictionary,
+  unitFiveDictionary,
+  unitSixDictionary,
+  unitSevenDictionary,
+  unitEightDictionary
+);
