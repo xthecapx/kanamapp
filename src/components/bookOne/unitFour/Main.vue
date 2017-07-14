@@ -30,6 +30,8 @@
 
 <script>
   import Time from './modules/Time'
+  import Verbs from './modules/Verbs'
+  import Question from './modules/Question'
   import { vocabulary } from './modules/Vocabulary'
 
   export default {
@@ -49,6 +51,14 @@
           {
             name: 'Time (時間)',
             key: 'app-time'
+          },
+          {
+            name: 'Verbs',
+            key: 'app-verbs'
+          },
+          {
+            name: 'Questions',
+            key: 'question-verbs'
           }
         ]
       }
@@ -59,7 +69,9 @@
       }
     },
     components: {
-      "app-time": Time
+      "app-time": Time,
+      "app-verbs": Verbs,
+      "question-verbs": Question
     }
   }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <v-ons-list>
-    <template v-for="(topic, key) in getTopics">
+    <template v-for="(topic, key) in getTopics[getBook].content">
       <v-ons-list-item
         :key="key"
         tappable
@@ -40,7 +40,8 @@
         active: "active0"
       }
     },
-    computed: mapGetters(['getTopics', 'getActive']),
+    computed: mapGetters(['getTopics', 'getActive', 'getBook']),
+    props: ['changeActive'],
     methods: {
       goVocabulary(key, isWrite, id) {
         this.$store.commit("setStart", 0)

@@ -20,31 +20,28 @@
 </template>
 
 <script>
-import HomePage from './components/HomePage'
 import MenuPage from './components/MenuPage'
-import BookOne from './pages/BookOne';
-import AppReference from './pages/Reference';
-import Dictionary from './pages/Dictionary';
+import Study from './pages/Study'
+import AppReference from './pages/Reference'
+import Dictionary from './pages/Dictionary'
 
 export default {
   name: 'app',
   data () {
     return {
       menuIsOpen: false,
-      currentPage: 'HomePage'
+      currentPage: 'Study'
     }
   },
   methods: {
     updatePageStack(event) {
-      console.log(event)
       this.currentPage = event
       this.menuIsOpen = false
     }
   },
   components: {
-    HomePage,
     MenuPage,
-    BookOne,
+    Study,
     AppReference,
     Dictionary
   }
@@ -53,7 +50,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ons-splitter-side[side=left][animation=overlay] {
-  border-right: 1px solid #BBB;
-}
+  ons-splitter-side[side=left][animation=overlay] {
+    border-right: 1px solid #BBB;
+  }
 </style>

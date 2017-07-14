@@ -11,7 +11,8 @@ export const states = {
   topics: TOPICS,
   progressBar: 0,
   errors: [],
-  active: 'active0'
+  active: 'active0',
+  book: 0
 }
 
 export const getters = {
@@ -44,6 +45,9 @@ export const getters = {
   },
   getActive(state) {
     return state.active
+  },
+  getBook(state) {
+    return state.book
   }
 }
 
@@ -74,6 +78,9 @@ export const mutations = {
   },
   setType(state, type) {
     state.type = type
+  },
+  setBook(state, book) {
+    state.book = book
   },
   shuffleQuestions(state, options) {
     let questions = state.vocabulary[options.id][options.key].questions,

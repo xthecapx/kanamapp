@@ -2,7 +2,7 @@
   <v-ons-page>
     <v-ons-toolbar modifier="transparent"></v-ons-toolbar>
     <div class="header">
-      <img src="../assets/onsenui-logo.png">
+      <img src="../assets/japanflag.png">
     </div>
 
     <v-ons-list-title>Kanamapp Navegation</v-ons-list-title>
@@ -25,20 +25,17 @@ export default {
     return {
       essentialLinks: [
         {
-          label: 'Book One',
-          link: 'https://onsen.io/v2/docs/guide/vue/',
+          label: 'Study',
           icon: 'fa-book',
-          id: 'BookOne'
+          id: 'Study'
         },
         {
           label: 'Answers',
-          link: 'https://gitter.im/OnsenUI/OnsenUI',
           icon: 'fa-commenting',
           id: 'AppReference'
         },
         {
           label: 'Dictionary',
-          link: 'https://community.onsen.io',
           icon: 'ion-chatboxes',
           id: 'Dictionary'
         }
