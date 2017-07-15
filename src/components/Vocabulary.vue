@@ -40,6 +40,7 @@
     },
     methods: {
       answered(answer) {
+        console.log(answer);
         if (answer.isCorrect) {
           this.mode = 'app-answer'
         } else {

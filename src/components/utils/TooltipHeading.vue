@@ -1,6 +1,6 @@
 <template>
-  <div class="panel-heading">
-    <h3 class="panel-title text-center" @click="showTooltip = !showTooltip">{{ title }}</h3>
+  <div class="panel-heading" @click="showTooltip = !showTooltip">
+    <h3 class="panel-title text-center">{{ title }}</h3>
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"

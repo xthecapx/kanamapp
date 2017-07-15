@@ -47,8 +47,8 @@
       computed: mapGetters(['getStart', 'getVocabulary', 'getUnit', 'getId']),
       methods: {
           generateQuestion() {
-            if (this.getStart > 10) {
-              this.word.question = "No more questions!!!"
+            if (this.getStart >= 10) {
+              this.$emit('results');
               return
             }
 
@@ -57,9 +57,9 @@
           },
           validate() {
             if (this.input == this.word.answer　|| this.input == this.word.question) {
-              this.$emit('answered', true);
+              this.$emit('answered', { isCorrect: true });
             } else {
-              this.$emit('answered', false);
+              this.$emit('answered', { isCorrect: false, question: this.word.question, answer: this.word.answer, en: this.word.answer });
             }
           }
       },
